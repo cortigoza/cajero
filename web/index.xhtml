@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Proyecto Banco</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="assets/css/style.css"/>
+    </h:head>
+    <h:body>
+        <div class="container" style="max-width: 800px">
+            <div class="card">
+                <img src="assets/img/uniajc.png" class="card-img"  height="300px" />
+            </div>
+            <h:form  id="login" class="border p-3 form">
+                <h1 class="text-center">Bienvenido a su cajero</h1>
+                <div class="row mt-4">
+                    <div class="col-sm-6">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <p class="card-text">Ingresa tus consignaciones.</p>
+                                <h:commandButton  class="btn btn-primary" value="Consignar" action="consignar"></h:commandButton>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <p class="card-text">Retira tu dinero al instante.</p>
+                                <h:commandButton  class="btn btn-primary" value="Retirar" action="retirar"></h:commandButton>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <p class="card-text">Consulta tu saldo.</p>
+                                <h:commandButton  class="btn btn-primary" value="Consultar" action="consultar"></h:commandButton>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <p class="card-text">Desde aqui podras ver tus movimientos.</p>
+                                <h:commandButton  class="btn btn-primary" value="Historial" action="historial"></h:commandButton>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </h:form>
+        </div>
+    </h:body>
+</html>
+
